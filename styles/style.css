@@ -1,7 +1,11 @@
-
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 *{
     margin: 0;
     padding: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
 }
 /* Header Styles */
 header{
@@ -23,12 +27,17 @@ header{
     gap: 15px;
     font-size:20px;
 }
+ul li{
+    font-size: 25px;
+   
+}
 ul li a {
     text-decoration: none;
+    color: #424242;
 }
 /*banner style  */
 .container{
-    background-color: #FF900E1A;
+    
 }
 .banner-section{
     display: flex;
@@ -63,7 +72,7 @@ ul li a {
 /* Features Style */
 .features-section{
     align-items: center;
-    margin-top: 120px;
+    margin-top: 50px;
     margin-left: 175px;
     margin-right: 170px;
 }
@@ -295,6 +304,6 @@ ul li a {
        grid-row-gap: 50px;
     }
 }
-.features-section,.fact-section,.footer,.love-enjoy-section{
+.fact-section,.footer,.love-enjoy-section{
     display: none;
 }
