@@ -143,9 +143,9 @@ ul li a {
     margin-top: 25px;
 }
 .section-description{
-    position: absolute;
+   
     margin-left: 5px;
-    width: 30%;
+    width: 80%;
     background: #FFFFFF;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
@@ -155,16 +155,20 @@ ul li a {
 .description-title{
    font-size: 20px;
 }
+.description-paragraph{
+    color: #727272;
+    font-size: 16px;
+    margin-top: 10px;
+}
 .architects img{
-    position: relative;
-    width: 400px;
+    width: 500px;
     height: 900x;
    
 }
 
 /* Some Fact Styles */
 .fact-section{
-    margin-left: 150px;
+    margin: 70px  180px;
 }
 .fact{
     justify-content: center;
@@ -185,7 +189,7 @@ ul li a {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 50px;
 }
 .icon-box{
@@ -244,7 +248,7 @@ ul li a {
     justify-content: center;
     align-items: center;
 }
-/* Media */
+/* Media Queries */
 @media only screen and (max-width:576px) {
     .container,.our-sponsor{
         width: 300px;
@@ -303,7 +307,4 @@ ul li a {
         margin-left: 20px;
        grid-row-gap: 50px;
     }
-}
-.fact-section,.footer,.love-enjoy-section{
-    display: none;
 }
