@@ -19,7 +19,6 @@ header{
 }
 .g3-architects{
     font-size: 25px;
-
 }
 .menu{
     display: flex;
@@ -29,24 +28,21 @@ header{
 }
 ul li{
     font-size: 25px;
-   
 }
 ul li a {
     text-decoration: none;
     color: #424242;
 }
 /*banner style  */
-.container{
-    
-}
 .banner-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 20px;
+    
 }
 .banner-title{
+    margin-top: 70px;
     font-weight: 700;
     font-size: 40px;
     text-align: center;
@@ -58,8 +54,8 @@ ul li a {
     font-size: 20px;
     color: #FFFFFF;
     background-color: #FF900E;
-   border: 0;
-   border-radius: 5px;
+     border: 0;
+    border-radius: 5px;
     padding: 10px 20px;
 
 }
@@ -238,8 +234,8 @@ ul li a {
 /* footer */
 .footer{
     margin: auto;
-    margin-top: 50px;
-    width:80%;
+    margin-top: 80px;
+    width:70%;
     height:20px;
     background: #FFF4E7;
     border-radius: 8px;
@@ -248,22 +244,26 @@ ul li a {
     justify-content: center;
     align-items: center;
 }
-/* Media Queries */
+/*------------------ Media Queries --
+------*/
 @media only screen and (max-width:576px) {
-    .container,.our-sponsor{
-        width: 300px;
+    .nav{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: row;
+    }
+    ul li{
+        font-size: 15px;
     }
     .g3-architects{
-    font-size: 50px;
-    text-align: center;
-    }
-    
+    font-size: 25px;
+}
     .banner-title{
         font-size: 30px;
     }
     .banner-detail{
         font-size: 15px;
-        
     }
     .nav{
     display:grid ;
@@ -273,6 +273,13 @@ ul li a {
     width: 90%;
     height: auto;
     margin-top: 50px;
+    }
+    /* features */
+    .features{
+        flex-direction: column-reverse;
+    }
+    .feature-gallery{
+        grid-template-columns: repeat(1,1fr);
     }
     /* love-enjoy-section */
     .love-enjoy-section{
@@ -287,24 +294,34 @@ ul li a {
     }
     /* some fact */
     .fact-section{
-        margin-left: 20px;
+        margin-left: 150px;
+    }
+    .fact{
+        justify-content: center;
+    }
+    
+    .fact-section{
+        margin-top: 600px;
         }
     .fact-icons{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         gap: 10px;
     }    
 
     /* our-sponsor */
     .our-sponsor{
        margin:auto;
-       text-align: center;
+      
     }
     .sponsor-content{
-        width: auto;
+        width: 100%;
     }
     .company-name{
         grid-template-columns: repeat(1,1fr);
-        margin-left: 20px;
-       grid-row-gap: 50px;
+        margin-left: 40px;
+       grid-row-gap: 70px;
     }
+    /* facts */
+    
 }
+
